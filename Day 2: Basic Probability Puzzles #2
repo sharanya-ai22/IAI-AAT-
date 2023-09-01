@@ -1,0 +1,12 @@
+from fractions import Fraction
+import math
+
+favorable_outcomes = 4
+total_outcomes = 36
+
+gcd = math.gcd(favorable_outcomes, total_outcomes)
+numerator = favorable_outcomes // gcd
+denominator = total_outcomes // gcd
+
+probability = Fraction(numerator, denominator)
+print(probability)
